@@ -26,3 +26,10 @@ Var <- sum((Y.val-E)^2*P.val)
 print(Var)
 standarddeviation <- sqrt(Var)
 print(standarddeviation)
+
+# notation to create a sequence 0 to 10
+rg <- 0:10
+
+# binomial random variable, args - sequence, repeats, probability of success in each trial
+# returns sequence of probabilities for each value in original sequence
+print(dbinom(c(1,2,3),10,0.4))
