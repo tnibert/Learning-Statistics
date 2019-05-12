@@ -36,6 +36,10 @@ print(dbinom(c(1,2,3),10,0.4))
 
 # sequence 0 to 10, increases 0.01 for 1000 values
 x <- seq(0,10,length=1000)
-# uniform random variable
+# uniform uniform random variable
 den <- dunif(x,3,7)
 plot(x,den,type="l")
+
+# cumulative uniform random variable
+cdf <- punif(x,3,7)
+plot(x,cdf,type="l")
