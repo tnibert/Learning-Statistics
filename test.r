@@ -43,3 +43,6 @@ plot(x,den,type="l")
 # cumulative uniform random variable
 cdf <- punif(x,3,7)
 plot(x,cdf,type="l")
+
+# max() gives the max value - e.g. the following will return 6
+max(c(1, 2, 6, 5, 3))

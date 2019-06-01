@@ -2,6 +2,8 @@
 
 # this deals with sampling distribution
 
+# these loops are an example of how to run a simulation for normal approximation
+
 # sampling distribution of sample average
 pop.1 <- read.csv("pop1.csv")
 X.bar <- rep(0,10^5)
@@ -52,4 +54,13 @@ for(i in 1:10^5)
 }
 hist(X.bar)
 quantile(X.bar,0.9)
+mean(X.bar)
+sd(X.bar)
 
+# we can use the norm() functions to do analysis
+# given that we have the expectation and the standard deviation
+# for a uniform distribution (the above bus rider problem) this will be:
+expectation <- (0+25)/2
+variance <- ((25-0)^2)/12
+# get 90th percentile
+qnorm(0.9, expectation, sqrt(variance))
